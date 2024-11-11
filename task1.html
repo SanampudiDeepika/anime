@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 300px;
+            width: 300px;
+            padding-left: 100%;
+        }
+      
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 50px;
+  row-gap: 2vh;
+}
+button{
+  height: 5vh;
+  width: 30%;
+  background-color: lightyellow;
+}
+.des:hover{
+  background-color: grey;
+}
+
+.img{
+  
+  transition-property: transform;
+  transition-duration: 3s;
+}
+.el1:hover~.img{
+  transform: translate(200px,200px);
+}
+.el2:hover~.img{
+  transform: translatex(200px);
+}
+.el3:hover~.img{
+  transform: translatey(200px);
+}
+.el4:hover~.img{
+  transform: rotate(180deg);
+}
+.el5:hover~.img{
+  transform: rotatex(180deg);
+}
+.el6:hover~.img{
+  transform: rotatey(180deg);
+}
+.el7:hover~.img{
+  transform: scale(1.5);
+}
+.el8:hover~.img{
+  transform: scalex(1.5);
+}
+.el9:hover~.img{
+  transform: scaley(1.5);
+}
+.el10:hover~.img{
+  transform: skew(30deg,20deg);
+}
+.el11:hover~.img{
+  transform: skewx(30deg);
+}
+.el12:hover~.img{
+  transform: skewy(30deg);
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="focus">
+        <div class="container">
+          <button class="el1">Translate</button>
+          <button class="el2">TranslateX</button>
+          <button class="el3">TranslateY</button>
+          <button class="el4">Rotate</button>
+          <button class="el5">RotateX</button>
+          <button class="el6">rotateY</button>
+          <button class="el7">Scale</button>
+          <button class="el8">scaleX</button>
+          <button class="el9">ScaleY</button>
+          <button class="el10">Skew</button>
+          <button class="el11">SkewX</button>
+          <button class="el12">SkewY</button>
+          <div class="img"><img src="assets/imagea.jpg" alt=""></div>
+        </div>
+        </div>
+</body>
+</html>

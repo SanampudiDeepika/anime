@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        
+
+        .container1{
+            display: flex;
+            gap: 2%;
+            justify-content: center;
+            padding-top: 40vh;
+        }
+
+        .ball{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: orange;
+            animation-name: bounce;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes bounce {
+           0%{
+            transform: translateY(-150px);
+           }
+        }
+
+        #el1{
+            animation-delay: 0.5s;
+        }
+        #el2{
+            animation-delay: 1s;
+        }
+        #el3{
+            animation-duration: 1.5s;
+        }
+
+        .container2{
+            display: flex;
+            gap: 1%;
+            padding-top: 10vh;
+            justify-content: center;
+        }
+
+        .dot{
+            animation-name: blink;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+        }
+
+        .red{
+           background-color: red;
+           height: 15px;
+           width: 15px;
+           border-radius: 50%;
+           animation-delay: 0.5s;
+           
+        }
+
+        .yellow{
+           background-color: yellow;
+           height: 15px;
+           width: 15px;
+           border-radius: 50%;
+           animation-delay: 1s;
+        }
+        
+        .blue{
+           background-color: blue;
+           height: 15px;
+           width: 15px;
+           border-radius: 50%;
+           animation-delay: 1.5s;
+        }
+
+        .green{
+           background-color: green;
+           height: 15px;
+           width: 15px;
+           border-radius: 50%;
+           animation-delay: 2s;
+        }
+
+        @keyframes blink {
+            50%{
+                transform: scale(1.5);
+            }
+        }
+    </style>
+</head>
+
+<body>
+   <div class="container1">
+    <div class="ball" id="el1"></div>
+    <div class="ball" id="el2"></div>
+    <div class="ball" id="el3"></div>
+  </div> 
+
+   <div class="container2">
+    <div class="red dot"></div>
+    <div class="yellow dot"></div>
+    <div class="blue dot"></div>
+    <div class="green dot"></div>
+   </div>
+</body>
+
+</html>
